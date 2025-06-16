@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "name": "Project_Proposal_2024.pdf",
+    "size": 2547328,
+    "type": "application/pdf",
+    "uploadDate": "2024-01-15T10:30:00.000Z",
+    "thumbnailUrl": null,
+    "progress": 100
+  },
+  {
+    "id": "2",
+    "name": "Team_Photo_Conference.jpg",
+    "size": 1048576,
+    "type": "image/jpeg",
+    "uploadDate": "2024-01-14T15:45:00.000Z",
+    "thumbnailUrl": "https://picsum.photos/200/200?random=1",
+    "progress": 100
+  },
+  {
+    "id": "3",
+    "name": "Budget_Spreadsheet_Q1.xlsx",
+    "size": 524288,
+    "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "uploadDate": "2024-01-13T09:15:00.000Z",
+    "thumbnailUrl": null,
+    "progress": 100
+  },
+  {
+    "id": "4",
+    "name": "Marketing_Presentation.pptx",
+    "size": 3145728,
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "uploadDate": "2024-01-12T14:20:00.000Z",
+    "thumbnailUrl": null,
+    "progress": 100
+  },
+  {
+    "id": "5",
+    "name": "Website_Mockup_Design.png",
+    "size": 2097152,
+    "type": "image/png",
+    "uploadDate": "2024-01-11T11:00:00.000Z",
+    "thumbnailUrl": "https://picsum.photos/200/200?random=2",
+    "progress": 100
+  }
+]
