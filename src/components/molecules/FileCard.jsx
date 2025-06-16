@@ -49,7 +49,7 @@ const FileCard = ({ file, onDelete, onPreview }) => {
     }
   };
 
-  return (
+return (
     <motion.div
       layout
       initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ const FileCard = ({ file, onDelete, onPreview }) => {
       exit={{ opacity: 0, scale: 0.95 }}
       whileHover={{ y: -2 }}
       transition={{ duration: 0.2 }}
-      className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden border border-surface-200"
+      className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden border border-surface-200 h-80 flex flex-col"
     >
       {/* Thumbnail/Icon Section */}
       <div className="aspect-square bg-surface-50 flex items-center justify-center relative overflow-hidden">
@@ -86,21 +86,22 @@ const FileCard = ({ file, onDelete, onPreview }) => {
           </motion.button>
         )}
       </div>
-
-      {/* File Info */}
-      <div className="p-4">
-        <h3 className="font-medium text-gray-900 text-sm mb-1 break-words leading-tight">
-          {file.name}
-        </h3>
-        
-        <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
-          <span>{formatFileSize(file.size)}</span>
-          <span>{format(new Date(file.uploadDate), 'MMM d')}</span>
+{/* File Info */}
+      <div className="p-4 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 className="font-medium text-gray-900 text-sm mb-1 break-words leading-tight line-clamp-2">
+            {file.name}
+          </h3>
+          
+          <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
+            <span>{formatFileSize(file.size)}</span>
+            <span>{format(new Date(file.uploadDate), 'MMM d')}</span>
+          </div>
         </div>
 
         {/* Actions */}
         <div className="flex items-center space-x-2">
-          {file.type.startsWith('image/') && (
+{file.type.startsWith('image/') && (
             <Button
               size="sm"
               variant="ghost"
